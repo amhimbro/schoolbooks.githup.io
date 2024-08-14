@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Bøker</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .book-list li {
+            position: relative;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 15px;
+            max-width: 220px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .book-list li:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .book-list img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .book-list li:hover img {
+            transform: scale(1.05);
+        }
+
+        .page-count {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .book-list a {
+            text-decoration: none;
+            color: #64ffda;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .book-list a:hover {
+            color: #00bfa5;
+        }
+
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            color: #64ffda;
+            font-size: 0.9em;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mine Bøker</h1>
+
+    <ul class="book-list">
+        <li>
+            <img src="BILDE1.JPG" alt="BOK1">
+            <div class="page-count">1204 sider</div>
+            <a href="Chemistry EIGHTH EDITION.pdf" target="_blank">Chemistry version 8</a>
+        </li>
+        <li>
+            <img src="randoms.JPG" alt="BOK1">
+            <div class="page-count">616 sider</div>
+            <a href="organic.pdf" target="_blank">Organic chemistry a short course V13</a>
+        </li>
+        <li>
+            <img src="boy1.JPG" alt="Medical Genetics version 5">
+            <div class="page-count">371 sider</div>
+            <a href="lekse.pdf" target="_blank">Medical Genetics version 5</a>
+        </li>
+        <li>
+            <img src="frosk.JPG" alt="Version 5 Essential cell biology">
+            <div class="page-count">34 sider</div>
+            <a href="kjedelig1.pdf" target="_blank">Version 5 Essential cell biology</a>
+        </li>
+        <li>
+            <img src="w.JPG" alt="Principles of Biochemistry version 6">
+            <div class="page-count">1493 sider</div>
+            <a href="bio campbell.pdf" target="_blank">Bio campbell version 12</a>
+        </li>
+        <li>
+            <img src="bruh.JPG" alt="Principles of Biochemistry version 6">
+            <div class="page-count">1136 sider</div>
+            <a href="nah.pdf" target="_blank">Principles of Biochemistry version 6</a>
+        </li>
+        <li>
+            <img src="yeee.JPG" alt="Principles of Biochemistry version 4">
+            <div class="page-count">1130 sider</div>
+            <a href="randomahhbok.pdf" target="_blank">Principles of Biochemistry version 4</a>
+        </li>
+        <li>
+            <img src="dam.JPG" alt="Essential Cell Biology 4th edition Alberts Test Ban">
+            <div class="page-count">48 sider</div>
+            <a href="ayyy.pdf" target="_blank">Essential Cell Biology 4th edition Alberts Test Ban</a>
+        </li>
+        <!-- Legg til flere bøker her hvis ønskelig -->
+    </ul>
+
+    <!-- Footer med signatur -->
+    <div class="footer">
+        Made by AQ7
+    </div>
+</body>
+</html>
